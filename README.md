@@ -2,15 +2,17 @@
 
 This project is a PCB breakout board designed for connecting Yaskawa servo drives to Duet3D control boards.  Specifically, it was developed to simplify connection between a Duet 3 6XD board and a pair of Yaskawa Sigma-7 SGD7S-****00A series servo drives—i.e., step/dir-capable drives.
 
+This should currently be considered in alpha!  Use at your own risk!
+
 ## The board serves the following functions:
 -	Correct voltage mismatch in Step/Direction signal.  The 6XD drives these signals at 5V, the SGD7S wants 3.3V
 -	Allow enabling “Servo On” from the 6XD’s Dx_EN(-) pin.  The SGD7S uses a 24V enable signal which the 6XD enable pins cannot drive directly.
--	Allow SGD7S alarm trigger to be received by the 6XD’s Dx_ERR pin.  Direct connection would overload the 6XD or SGD7S.
 -	Combines the torque-limit enable for forward and reverse (these are 2 separate inputs) and from both drives, to allow a single optoisolated output to trigger torque limiting for both drives, in both directions (e.g., during homing or moves prior to homing)
 -	Combines the alarm reset signal for both drives
 -	Combines the P-control enable signal for both drives
 -	Provides a jumper to select output two between P-Control and an assignable/open pin
 -	Provides one currently-unassigned output breakout
+- Block terminal allow reconfiguration of various inputs/outputs from default if desired.
 
 ### Do I need this to connect to a SGD7S servo drive?
 No.  None of the connections made on the board are particularly bulky or complex; the necessary components could be joined directly into the wiring between the 6XD and SGD7S’s CN1 connector if preferred.
