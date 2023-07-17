@@ -6,13 +6,13 @@ This should currently be considered in alpha!  Use at your own risk!
 
 ## The board serves the following functions:
 -	Correct voltage mismatch in Step/Direction signal.  The 6XD drives these signals at 5V, the SGD7S wants 3.3V
--	Allow enabling “Servo On” from the 6XD’s Dx_EN(-) pin.  The SGD7S uses a 24V enable signal which the 6XD enable pins cannot drive directly.
+-	Allow enabling “Servo On” from the 6XD’s Dx_EN(-) pin.  The SGD7S uses a 24V enable signal which the 6XD enable pins cannot drive directly.  Set 6XD's enable jumper to "active enable".
 -	Combines the torque-limit enable for forward and reverse (these are 2 separate inputs) and from both drives, to allow a single optoisolated output to trigger torque limiting for both drives, in both directions (e.g., during homing or moves prior to homing)
--	Combines the alarm reset signal for both drives
--	Combines the P-control enable signal for both drives
--	Provides a jumper to select output two between P-Control and an assignable/open pin
--	Provides one currently-unassigned output breakout
-- Block terminal allow reconfiguration of various inputs/outputs from default if desired.
+-	Combine the alarm reset signal for both drives
+-	Combine the P-control enable signal for both drives
+-	Provide a jumper to select output two between P-Control and an assignable/open pin
+-	Provide one currently-unassigned output breakout
+- Block terminals and jumper allow reconfiguration of various inputs/outputs from default if desired.
 
 ### Do I need this to connect to a SGD7S servo drive?
 No.  None of the connections made on the board are particularly bulky or complex; the necessary components could be joined directly into the wiring between the 6XD and SGD7S’s CN1 connector if preferred.
