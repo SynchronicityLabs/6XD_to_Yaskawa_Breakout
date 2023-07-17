@@ -12,7 +12,7 @@ This should currently be considered in alpha!  Use at your own risk!
 -	Combines the torque-limit enable for forward and reverse (these are 2 separate inputs) and from both drives, to allow a single optoisolated output to trigger torque limiting for both drives, in both directions (e.g., during homing or moves prior to homing).
 -	Combine the alarm reset signal for both drives to use a single optoisolated output
 -	Combine the P-control enable signal for both drives to use a single optoisolated output
--	Provide a jumper to select two outputs between P-Control and two open terminal block connect (i.e., you can connect 2 of the 3)
+-	Provide a jumper to select two outputs between P-Control and two open terminal block connections (i.e., you can connect 2 of the 3)
 - Block terminals and jumper allow reconfiguration of various inputs/outputs from default if desired.
 
 ### Do I need this to connect to a SGD7S servo drive?
