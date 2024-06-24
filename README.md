@@ -4,7 +4,7 @@
 
 This is a PCB breakout board designed for connecting Yaskawa servo drives to Duet3D control boards.  Specifically, it was developed to simplify connection between a Duet 3 6XD board and a pair of Yaskawa Sigma-7 SGD7S-****00A series servo drives—i.e., step/dir-capable drives.  These drives range from 50W to 15kW, with the 50W to 400W versions (10-400W motors) being available in 100VAC or 200VAC single-phase.
 
-This should currently be considered in alpha!  Use at your own risk!
+This should be considered in beta! It is working on my drives, but use at your own risk!
 
 ## The board serves the following functions:
 -	Correct voltage mismatch in Step/Direction signal.  The 6XD drives these signals at 5V, the SGD7S wants 3.3V
